@@ -1,0 +1,10 @@
+# https://pre-commit.com/#install
+
+repos:
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.76.0 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+    hooks:
+      - id: terraform_validate # terragrunt is required: https://terragrunt.gruntwork.io/docs/getting-started/install/
+      - id: terraform_tflint # TFLint is required: https://github.com/terraform-linters/tflint
+      - id: terraform_fmt
+      - id: terraform_docs # terraform-docs is required: https://github.com/terraform-docs/terraform-docs

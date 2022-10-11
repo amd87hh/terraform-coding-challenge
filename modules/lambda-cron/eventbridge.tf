@@ -5,8 +5,8 @@ locals {
 
 # Define a rule with the relevant schedule expression which is passed into the module
 resource "aws_cloudwatch_event_rule" "schedule" {
-  count               = local.create_trigger ? 1 : 0
-  
+  count = local.create_trigger ? 1 : 0
+
   name                = "${var.ressource_name_prefix}-lambda-schedule"
   description         = "Schedule for Lambda Function"
   schedule_expression = var.schedule_expression
