@@ -10,9 +10,8 @@ Terraform module, which creates a lambda function defined by the user. The lambd
 
 - Die AWS Region wird per Data Source - ```data "aws_region" "current" {}``` ausgewertet, und als Output angezeigt.
   
-- Zu der Versioning Strategie kann ich wenig sagen, da ich bisher nur von lokal aus deployed habe, und das CI/CD des TF Code noch aussteht.
-  Was ich vorhabe (falls das zur Versioning Strategie zählt) ist Gitlab als eine Terraform Modul Registry zu nutzen.
-  Außerem kann Gitlab auch als Backend für die TF State verwendet werden (anstatt S3). So wird nur noch der Live Code, welcher das Modul verwendet, eingecheckt.
+- Zu der Versioning Strategie kann ich wenig sagen, da ich bisher nur von lokal aus deployed habe, und das CI/CD des TF Code in meinem jetztigen Projekt   noch aussteht. Was ich vorhabe (falls das zur Versioning Strategie zählt) ist Gitlab als eine Terraform Modul Registry zu nutzen.
+  Außerem kann Gitlab auch als Backend für die TF State verwendet werden (anstatt S3). So wird nur noch der Live Code, welcher das Modul verwendet,  eingecheckt.
 
 ## Requirements
 
